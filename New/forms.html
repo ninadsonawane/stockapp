@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Purchase Form</title>
+    <style>
+        body {
+          background-image: url('C:/Users/RIYA/OneDrive/Desktop/FSWD/p2.jpeg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        input[type="submit"] {
+            background-color: #2C3539;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #3EA99F;
+        }
+       
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*height: 100vh;*/
+           left-padding: 100px;
+            width: 1500px; /* Adjust the width of the form as needed */
+        }
+    </style>
+</head>
+<body >
+    <h1 style="color: #0AFFFF;font-size: 50px;text-align: center">Stock Purchase Form</h1>
+    <div>
+    <form method="post" action="/submit">
+        <div>
+        <label style="color: #01F9C6;" for="name"><b>Name:</b></label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <div>
+        <label style="color: #01F9C6;"for="phone_number"><b>Phone Number:</b></label><br>
+        <input type="tel" id="phone_number" name="phone_number" required><br><br>
+        
+        <label style="color: #01F9C6;"for="stock_name"><b>Stock Name:</b></label><br>
+        <input type="text" id="stock_name" name="stock_name" required><br><br>
+        
+        <label style="color: #01F9C6;"for="num_stocks_purchased"><b>Stocks Purchased:</b></label><br>
+        <input type="number" id="num_stocks_purchased" name="num_stocks_purchased" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .logo img {
+        max-width: 100px;
+        height: auto;
+        }
+
+        /* Styling main content */
+        main {
+            margin: 20px;
+        }
+
+        /* Styling navigation */
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Styling sections */
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* Styling graphs */
+        canvas {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Styling image containers */
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="style1.css">
+    <!-- Link to Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <h1>Financial Dashboard</h1>
+        <div class="amount">
+            <p>$100,000</p> <!-- Example amount -->
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#graph1day">1 Day</a></li>
+            <li><a href="#graph1week">1 Week</a></li>
+            <li><a href="#graph1year">1 Year</a></li>
+            <li><a href="#graph5years">5 Years</a></li>
+            <li><a href="#graph10years">10 Years</a></li>
+        </ul>
+    </nav>
+    <main>
+        <br><br>
+        <!-- Image containers with unique styling classes -->
+        <div class="image-container">
+            <img src="image_1day.jpg" alt="1 Day Image">
+        </div>
+        <section id="graph1day">
+            <h2>1 Day Graph</h2>
+            <canvas id="graph-1day"></canvas>
+        </section>
+
+        <div class="image-container">
+            <img src="image_1week.jpg" alt="1 Week Image">
+        </div>
+        <section id="graph1week">
+            <h2>1 Week Graph</h2>
+            <canvas id="graph-1week"></canvas>
+        </section>
+
+        <div class="image-container">
+            <img src="image_1year.jpg" alt="1 Year Image">
+        </div>
+        <section id="graph1year">
+            <h2>1 Year Graph</h2>
+            <canvas id="graph-1year"></canvas>
+        </section>
+
+        <div class="image-container">
+            <img src="image_5years.jpg" alt="5 Years Image">
+        </div>
+        <section id="graph5years">
+            <h2>5 Years Graph</h2>
+            <canvas id="graph-5years"></canvas>
+        </section>
+
+        <div class="image-container">
+            <img src="image_10years.jpg" alt="10 Years Image">
+        </div>
+        <section id="graph10years">
+            <h2>10 Years Graph</h2>
+            <canvas id="graph-10years"></canvas>
+        </section>
+    </main>
+    <!-- Link to external JavaScript file -->
+    <script src="scripts.js"></script>
+</body>
+</html>

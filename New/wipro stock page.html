@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .logo img {
+        max-width: 100px;
+        height: auto;
+        }
+
+        /* Styling main content */
+        main {
+            margin: 50px;
+        }
+
+        /* Styling navigation */
+        nav ul {
+            color: #01F9C6
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Styling sections */
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* Styling graphs */
+        canvas {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Styling image containers */
+        .image-container {
+            text-align: center;
+            margin-bottom: 70px;
+            width: 150;
+            height: 50px;
+        }
+
+        .image-container img {
+            max-width: 500px;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:/Users/RIYA/OneDrive/Desktop/FSWD/wipro.jpeg" alt="Logo">
+        </div>
+        <h1>Wipro</h1>
+        <div class="amount">
+            <p>₹504</p> <!-- Example amount -->
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#graph1day"><p style="color: #7E3517"><b>1 Day</b></p></a></li>
+            <li><a href="#graph1week"><p style="color: #7E3517"><b>1 Week</b></p> </a></li>
+            <li><a href="#graph1year"><p style="color: #7E3517"><b>1 Year</b></p> </a></li>
+        </ul>
+    </nav>
+    <main>
+        <br><br>
+        <!-- Image containers with unique styling classes -->
+        <div class="image-container" width="600px" height="900px">
+            <img src="C:/Users/RIYA/OneDrive/Desktop/FSWD/New/tcs1.jpeg" alt="1 Day Image" >
+        </div>
+        <section id="graph1day">
+            <h2>1 Day Graph</h2>
+            <canvas id="graph-1day"></canvas>
+             <div class="image-container">
+            <img src="C:/Users/RIYA/OneDrive/Desktop/FSWD/New/g8.png" alt="1 Day Image" >
+        </div>
+        </section>
+
+       
+        <section id="graph1week">
+            <h2>1 Week Graph</h2>
+            <canvas id="graph-1week"></canvas>
+        </section>
+
+        <div class="image-container">
+            <img src="C:/Users/RIYA/OneDrive/Desktop/FSWD/New/g6.png" alt="1 Day Image" >
+        </div>
+        <section id="graph1year">
+            <h2>1 Year Graph</h2>
+            <canvas id="graph-1year"></canvas>
+        </section>
+
+        
+    </main>
+    <!-- Link to external JavaScript file -->
+    <script src="scripts.js"></script>
+</body>
+</html>
